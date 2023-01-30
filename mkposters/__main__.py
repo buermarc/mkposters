@@ -1,7 +1,8 @@
 import sys
+from pathlib import Path
 
 from .mkposter import mkposter
 
 
 _, filename = sys.argv
-mkposter(filename)
+mkposter(Path(filename))
